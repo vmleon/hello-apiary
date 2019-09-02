@@ -1,0 +1,28 @@
+{
+  "name": "hello-apiary",
+  "version": "1.0.0",
+  "description": "Basic API example",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vmleon/hello-apiary.git"
+  },
+  "keywords": [
+    "API",
+    "Apiary",
+    "example"
+  ],
+  "author": "Victor Martin (victor.martin.alvarez@oracle.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vmleon/hello-apiary/issues"
+  },
+  "homepage": "https://github.com/vmleon/hello-apiary#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
