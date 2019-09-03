@@ -1,0 +1,41 @@
+swagger: '2.0'
+info:
+  version: '1.0'
+  title: "hello"
+  description: Basic API example.
+  license:
+    name: MIT
+    url: https://github.com/vmleon/hello-apiary.git
+host: polls.apiblueprint.org
+basePath: /
+schemes:
+- http
+consumes:
+- application/json
+produces:
+- application/json
+paths:
+  /health:
+    x-summary: Health check
+    get:
+      summary: Get health check
+      responses:
+        200:
+          description: Successful Response
+          schema:
+            items:
+              $ref: '#/definitions/HealthCheck'
+          examples:
+            application/json:
+              status: OK
+definitions:
+  HealthCheck:
+    title: Health Check
+    type: object
+    properties:
+      status:
+        type: string
+    required:
+      - status
+    example:
+      status: OK
