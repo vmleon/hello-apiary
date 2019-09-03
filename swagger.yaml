@@ -1,6 +1,6 @@
-swagger: '2.0'
+swagger: "2.0"
 info:
-  version: '1.0'
+  version: "1.0"
   title: "hello"
   description: Basic API example.
   license:
@@ -9,11 +9,11 @@ info:
 host: polls.apiblueprint.org
 basePath: /
 schemes:
-- http
+  - http
 consumes:
-- application/json
+  - "application/json"
 produces:
-- application/json
+  - "application/json"
 paths:
   /health:
     x-summary: Health check
@@ -22,9 +22,13 @@ paths:
       responses:
         200:
           description: Successful Response
+          headers:
+            Content-Type:
+              type: string
+              default: application/json; charset=utf-8
           schema:
             items:
-              $ref: '#/definitions/HealthCheck'
+              $ref: "#/definitions/HealthCheck"
           examples:
             application/json:
               status: OK
